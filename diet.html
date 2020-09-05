@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Diet</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="myfitness.html">myFitness Gym</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fitness
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/exercises.html">Exercises</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item active" href="/diet.html">Diet Plans</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fitness Calculator
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/bmi.html">BMI</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/bmr.html">BMR</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/fat.html">Fat Percentage</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+            </ul>
+
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to myFitness</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Keep me Signed in</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an myFitness account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <img src="D1.jpeg">
+    </div>
+
+
+
+    <div class="container my-4">
+        <div class="blog-post">
+            <h2> First Things First</h2>
+            Whenever you come up with any workout plan keep in mind that muscle building and fat reducing takes time.
+            For some it may take weeks, for some months and others years. So the main key here is to be patient all
+            through the process.
+            As things won't change overnight, they change overtime. Same applies to your physique.
+            <h2>Calorie Needs and Macronutrients</h2>
+            <p>The primary goal is to increase muscle mass in the bulking phase and reduce body fat
+                in the cutting phase. One could also prefer Body Recomposition where he may gain muscle mass
+                and loose fat at the same time. For bulking, you need to be in calorie surplus and proportionally
+                for cutting (dropping body fat percentage) you need to be in calorie deficit.
+            </p>
+
+            <h3>Lets dig deeper into diet</h3>
+            <p>You should be well aware of the intake of your food. You must ensure that you have a balanced diet.
+                You should fill in your diet with 40 % protein, 20 % fat and rest with carbohydrates and micro
+                nutrients.
+                One shouldn't neglect micronutrients as they play a major role in synthesizing your macro diet.
+            <p> About 70% of your muscle contains water so make sure that you drink a minimum 3 - 4 litres of water
+                everday. While aiming
+                for body recomposition you should cut down your intake of salt and sugar.</p>
+            </p>
+            <img class="img-fluid " src="micro.jpg" alt="">
+            <h3>What should your pre-workout and post-workout meals be?</h3>
+            <p>There are many options availabe as to what to consume before and after workout. Well, ideally bananas
+                should be your
+                first preference as a pre-workout meal as the results show that 2 bananas provide enough energy for a 90
+                min intense workout.
+            <p> It is important to
+                have a post-workout meal as this is found to be effective with better results. Protein shakes should be
+                preferred right
+                after workout.</p>
+
+            </p>
+
+            <h3>How Many Calories Do You Need?</h3>
+            <p>The efficient way to estimate how many calories you need to maintain your weight is use the maintenance
+                calorie
+                caluculator or weigh yourself on regular basis by tracking your diet if you do not loose or gain weight
+                with that
+                diet, that's your maintenence calories.</p>
+            <p>When you plan fot bulking, make sure that you prefer clean bulk. Clean Bulk is that the proportion of fat
+                that you consume
+                while bulking should be low. Keep your carbs and proteins as high as possible. Make sure that you
+                maintain less than
+                or 15 % of caloric surplus during your bulk phase.
+            </p>
+            <p>Similarily when to plan to cut make sure that you are high on proteins. Here, the important part is that
+                while
+                cutting you may loose muscle mass. So make sure that you don't fall below 15% of calorie deficit than
+                your maintenance
+                calories in order to preserve your muscle mass while loosing fat.
+            </p>
+            <p>Gradually as you progress make sure that you make minor changes in your calorie surplus and calorie
+                deficit in your
+                bulking and cutting phase to get better results. It's advised not to loose/gain more than 0.5 kg of your
+                body weight
+                per week. Slower the process, better are the results.
+            </p>
+            <p>During either phase, it’s recommended not to lose or gain more than 0.5–1% of your body weight per week.
+                This ensures that you don’t lose too much muscle during the cutting phase or gain too much body fat
+                during the bulking phase</p>
+
+            <h3>Macronutrient Ratio</h3>
+            <p>Once you calculate the number of calories you need, you can determine your macronutrient ratio, which is
+                the ratio between your protein, carbohydrate and fat intake.
+
+                Unlike the difference in your calorie needs between the bulking and cutting phase, your macronutrient
+                ratio does not change.</p>
+            <h3>Micronutrient Ratio</h3>
+            <p>Whatever your plan is make sure than you consume micronutrients on regular basis. As these help in
+                synthesizing and act
+                as a background in your whole diet plan.
+            </p>
+            <h3>Protein Sources</h3>
+            <p>As we have already discussed that protein is the most important macronutrient one should consume inorder
+                to see a change
+                in their physique. Below are some protein sources that you may find available anywhere in the market.
+            </p>
+            <h5>Non-Vegetarian Protein Sources</h5>
+            <p>If you are a non-vegetarian then chicken and eggs should be your all time favourite. These are best for
+                your workout plan.
+                Other sources include mutton, fish, shrimp etc.
+            </p>
+            <h5>Vegetarian Protein Sources</h5>
+            <p>If you are a non-vegetarian then tofu and soya beans should be your first preference. These are best for
+                your workout plan.
+                Other sources include nuts,dry fruits,milk products,leafy vegetables etc.
+            </p>
+
+
+        </div>
+    </div>
+
+
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2020-2021 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
